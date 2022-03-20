@@ -1,0 +1,549 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  1.vị trí
+    2. kích thước
+    3. màu sắc
+    4. kiểu dáng
+ */
+
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+}
+
+
+#nav {
+    display: inline-block;
+}
+#nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav > ul > li > a {
+    color: white;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > ul > li:hover > a{
+    color: black;
+    background-color: silver;
+}
+
+#nav .subnav {
+    min-width: 160px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+#nav .subnav a {
+    color: black;
+    text-align: center;
+}
+#nav .subnav li {
+    display: none;
+}
+
+#nav .subnav li:hover {
+    color: white;
+    background-color: silver;
+}
+
+#nav > ul > li:last-child:hover > .subnav li{
+    display: block;
+}
+
+#nav .arrow-down {
+    font-size: 12px;
+}
+
+#search {
+    float: right;
+    padding : 0 22px;
+}
+
+#search .icon-search {
+    color: white;
+    line-height: 46px;
+}
+
+#menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding : 0 22px;
+    display: none;
+}
+
+#menu-btn .ti-menu {
+    color: white;
+    line-height: 46px;
+}
+
+#menu-btn:hover {
+        background-color: silver ;
+        cursor: pointer;
+}
+
+#search:hover {
+    background-color: red ;
+    cursor: pointer;
+}
+
+
+#slider {
+    position: relative;
+    margin-top: 46px;;
+    font-size: 20px;
+    padding-top: 50%;
+    background-color: #333;
+    background-image: url(./chicago.jpg) ,url(./la.jpg);
+    background-position: center top;
+    background-repeat: no-repeat, no-repeat;
+    background-clip: border-box, border-box;
+    background-size: cover, cover;
+}
+
+#slider .text {
+    color: white;
+    position: absolute;
+    bottom: 47px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#slider .text h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 500;
+}
+#slider .text p {
+    font-size: 15px;
+}
+
+#content {
+    height: 2000px;
+}
+
+#content .title {
+    margin : 10px 0;    
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+
+#content #singer {
+    padding: 64px 0;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+#content .about {
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;  
+}
+
+#content .about i{
+    color: darkgrey;
+    font-size: 15px;
+}
+
+#content .doan-van {
+    text-align: justify;
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+#content #singer #team-image {
+    padding: 32px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+#team-image .image img {
+    width: 60%;
+    border-radius: 4px;
+}
+
+#content #singer p {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#content #team-image .clear {
+    clear: both;
+}
+
+#content #tour-section {
+    background-color: black;
+}
+
+#content #tour {
+    background-clip: border-box;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content #tour .title {
+    color: white;
+}
+
+#content #contact {
+    background-clip: border-box;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;                                                                                                         
+}                                                               
+
+#tour-section #tour .ticket {
+    background-color: white;
+    margin-top: 40px;
+}
+
+#tour-section #tour .ticket li {
+    padding : 8px 16px;
+    font-size: 15px;
+    border-bottom: 1px solid;
+    border-color: silver;
+    list-style: none;
+}
+
+#tour-section #tour .ticket .sold {
+    margin-left: 16px;
+    padding: 3px 4px;
+    color: white;
+    background-color: #f44336;
+}
+
+#tour-section #tour .ticket .not-sold {
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+    background-color: black;
+    border-radius: 50%;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    color: white;
+    padding: 0 8px;
+    margin-top: -3px;
+}
+
+#buy-ticket {
+    padding: 32px 0px;
+    margin: 0 -8px;
+}
+
+#tour-section #buy-ticket {
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+#tour-section #buy-ticket .city {
+    padding: 0 8px;
+    margin-bottom: 16px;
+    background-color: white;
+    background-clip: content-box;
+    box-sizing: border-box;
+}
+
+#buy-ticket .city img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+#buy-ticket .city img:hover {
+    opacity: 0.6;
+    background-color: black;
+}
+
+.title-ticket {
+    padding: 0.15px 16px;
+}
+
+.title-ticket p {
+    margin : 15px 0;
+}
+
+.title-ticket p:nth-child(2) {
+    color: silver;
+}
+
+.title-ticket button {
+    padding: 12px 20px;
+    margin-bottom: 16px;
+    color: white;
+    background-color: black;
+    border: 0px;
+    vertical-align: middle;
+}
+
+.title-ticket button:hover {
+    color: black;
+    background-color: silver;
+    cursor: pointer;
+}
+
+#contact-id {
+    padding : 32px 16px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+#phone {
+    margin-bottom: 16px;
+    float: left;
+    font-size: 15px;
+}
+
+#phone i {
+    width: 30px;
+    font-size:inherit;
+    padding-right: 10px;
+    display: inline-block;
+    padding-top: 4px;
+}
+
+#send {
+    float: left;
+    margin-bottom: 16px;
+    top : 0;
+}
+
+#info {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 8px;
+    margin-top: -8px;
+    overflow: hidden;
+}
+
+#info .name-email {
+    float: left;
+    padding: 8px;
+}
+#info .name-email input {
+    border: solid 1px;
+    width: 100%;
+    padding: 8px;
+    margin: 1px;
+    color: rgb(32, 20, 20);
+}
+
+#send #messenger {
+    width: 100%;
+}
+
+#send #messenger input {
+    color: rgb(32, 20, 20);
+    margin: 1px;
+    padding: 8px;
+    border: solid 1px;
+    width: 100%;
+
+}
+
+#send #messenger button {
+    padding : 8px 16px;
+    margin: 16px 0;
+    float: right;
+    color: white;
+    background-color: black;
+    border: 0ch;
+}
+
+#send #messenger button:hover {
+    color: white;
+    background-color: silver;
+    cursor:pointer;
+}
+
+#map {
+    width: 100%;
+}
+
+#map img {
+    width: 100%;
+    height: auto;
+    border-style: none ;
+    vertical-align: auto;
+}
+
+#footer {
+    text-align: center;
+    padding: 64px 16px;
+}
+
+#footer i {
+    font-size: 20px;
+}
+
+#footer i:first-child:hover {
+    color: #385898;
+}
+#footer p {
+    margin: 15px 0;
+}
+
+#footer p a {
+    color: black;
+}
+
+#footer p a:hover {
+    color: #f44336;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 100px ;
+    z-index: 3;
+    display: none;
+}
+
+.modal.open{
+    display: block;
+}
+.modal #js-modal-content {
+    position: relative;
+    background-color: white;
+    font-size: 14px;
+    animation: slide ease 0.5s;
+}
+
+.modal #js-modal-content #modal-header {
+    background-color: #009688;
+}
+
+.modal #js-modal-content .ti-close {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 16px;
+    line-height: 1.5;
+}
+
+.modal #js-modal-content .ti-close:hover {
+    color: black;
+    background-color: silver;
+    cursor: pointer;
+}
+
+
+#modal-header {
+    padding: 32px 16px;
+}
+
+#modal-header .logo h2{
+    text-align: center;
+    color: white;
+}
+
+#modal-header .logo h2 i{
+    text-align: center;
+    color: white;
+    padding: 0 10px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+#modal-container {
+    padding: 0 16px;
+}
+#modal-container .container-info {
+    margin: 10px 0;
+}
+
+#modal-container input {
+    padding: 8px;
+    margin: 1px;
+
+    width: 100%;
+    border-style: solid 1px;
+}
+
+#modal-container .pay {
+    padding: 16px;
+    margin: 16px 0;
+    width: 100%;
+    background-color: #009688;
+    border-style: none;
+    color: white;
+}
+
+#modal-container .pay:hover {
+    color: black;
+    background-color: silver;
+    cursor: pointer;
+}
+
+#modal-container .js-close {
+    padding: 8px 16px;
+    margin: 16px 0;
+    color: white;
+    background-color: #f44336;
+    border-style: none ;
+}
+
+#modal-container .js-close:hover {
+    cursor: pointer;
+    color: black;
+    background-color: silver;
+}
+
+#modal-container .help {
+    float: right ;
+    margin: 15px 0;
+}
+
+@keyframes slide {
+    from {
+        transform :translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+}
+
+
+

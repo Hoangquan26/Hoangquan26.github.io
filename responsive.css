@@ -1,0 +1,149 @@
+@media (max-width : 740px) {
+    #header.menu {
+        overflow: visible;
+        height: auto;
+    }
+    #nav{
+        display: block;
+    }
+    #nav>ul>li {
+        display: block;
+    }
+    #nav>ul>li:first-child {
+        display: inline-block;
+    }
+    #search .icon-search{
+        display: none;
+    }
+    #menu-btn {
+        display: block;
+    }
+
+    #content #singer {
+        max-width: 600px;
+    }
+    #content #singer p {
+        padding: 0 32px;
+    }
+    #content #singer .image {
+        float: left;
+        width: 99.99%;
+    }
+    #content #tour {
+        max-width: 600px;
+    }
+    #tour {
+        padding: 64px 16px;
+    }
+    #tour-section #buy-ticket .city {
+        float: left;
+        width: 99.99%;
+    }
+    #phone, #send{
+        width: 99.99%;
+    }
+    #info .name-email {
+        width: 99.99%;
+        display: block;
+    }
+    #contact-id {
+        max-width: 600px;
+    }
+    #js-modal-content {
+        margin: 0 10px;
+    }
+    #header {
+        overflow: hidden;
+    }
+    #messenger {
+        padding: 8px 16px;
+    }
+    #nav .subnav {
+        position: initial; 
+        background-color:dimgrey;
+    }
+    #nav .subnav li {
+        padding: 0 24px;
+    }
+    #nav .subnav a {
+        text-align: left;
+        color: white;
+    }
+    
+}
+
+@media (min-width : 1024px) {
+    #content #singer {
+        width: 800px;
+    }
+    #content #singer .image {
+        float: left;
+        width: 33.33%;
+    }
+    #content #tour {
+        width: 800px;
+        max-width: 100%;
+        padding: 64px 0;
+    }
+    #tour-section #buy-ticket .city {
+        float: left;
+        width: 33.33%;
+    }
+    #phone, #send{
+        width: 49.99%;
+    }
+    #info .name-email {
+        width: 49.99%;
+        display: inline-block;
+    }
+    #contact-id {
+        width: 800px;
+    }
+    #js-modal-content {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #messenger {
+        padding: 0px 16px;
+    }
+    
+}
+
+@media (min-width : 741px) and (max-width : 1023px) {
+
+    #content #singer {
+        max-width: 700px;
+    }
+    #content #singer .image {
+        float: left;
+        width: 33.33%;
+    }
+    #content #tour {
+        max-width: 700px;
+        max-width: 100%;
+        padding: 64px 16px;
+    }
+    #tour-section #buy-ticket .city {
+        float: left;
+        width: 33.33%;
+    }
+    #phone, #send{
+        width: 49.99%;
+    }
+    #info .name-email {
+        width: 49.99%;
+        display: inline-block;
+    }
+    #contact-id {
+        max-width: 700px;
+    }
+    #js-modal-content {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #messenger {
+        padding: 0px 16px;
+    }
+}
