@@ -43,4 +43,15 @@ for(var i = 0; i < menus.length; i++) {
             e.preventDefault();
         })
 }
+//đóng moblie menu khi nhấn ra ngoài mobile menu
+var mainElement = document.getElementById('main');
+function closeMobileMenu() {
+    if(header.classList.contains('menu') === true)
+        openMenu();
+}
+mainElement.addEventListener('mousedown', closeMobileMenu)
+
+header.addEventListener('mousedown', function(e) {
+    e.stopPropagation();
+})
 
